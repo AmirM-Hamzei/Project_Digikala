@@ -1,0 +1,437 @@
+header {
+    width: 100%;
+    height: 338px;
+    position: relative;
+    z-index: 2;
+}
+/* header_Banner */
+header .header_Banner {
+    width: inherit;
+    height: 60px;
+    position: fixed;
+    z-index: 2;
+}
+header .header_Banner img {
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+}
+/* /header_Banner */
+/* header_Center */
+header .header_Center {
+    width: inherit;
+    height: 68px;
+    margin: 0 auto;
+    padding: 12px 16px;
+    background-color: #FFF;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 60px;
+    z-index: 2;
+}
+header .header_Center .hC_Right {
+    height: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+}
+header .header_Center .hC_Right .Logo {
+    height: inherit;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+header .header_Center .Search_Box{
+    width: 600px;
+    height: inherit;
+    padding: 0 16px;
+    background-color: #F0F0F1;
+    border-radius: 8px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+header .header_Center .Search_Box input[type="search"]{
+    width: 100%;
+    height: inherit;
+    padding: 0 16px;
+    background-color: unset;
+    border: unset;
+    outline: unset;
+    font-family: IRANYekanWeb-Medium;
+    font-size: 12px;
+    color: #81858b;
+    border-radius: 8px;
+}
+header .header_Center .Search_Box input::placeholder {/* Firefox */
+    color: #81858b;
+    opacity: 1;
+}
+header .header_Center .Search_Box input::-ms-input-placeholder {/* Edge 12 -18 */
+    color: #81858b;
+}
+/* header .header_Center .Search_Box #Search_Bar:focus  .Search_Box {
+    background-color: #FFF;
+} */
+header .header_Center .Login{
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    column-gap: 12px;
+}
+header .header_Center .Login .Login_Button{
+    width: fit-content;
+    height: inherit;
+    padding: 0 16px;
+    border: 1px solid #e0e0e2;
+    border-radius: 8px;
+    font-size: 12px;
+    color: #0c0c0c;
+    text-decoration: none;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    column-gap: 8px;
+}
+header .header_Center .Login .Login_Button .Login_Text {
+    width: max-content;
+    height: inherit;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+header .header_Center .Login .section1{
+    width: 1px;
+    height: 24px;
+    background-color: #e0e0e2;
+}
+header .header_Center .Login .Shopping_Cart{
+    padding: 8px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+/* /header_Center */
+/* header_Menu */
+header .header_Menu{
+    width: inherit;
+    height: 40px;
+    background-color: #FFF;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+    position: sticky;
+    top: 128px;
+    z-index: 1;
+    box-shadow: 0 1px 1px #ababab;
+}
+/* Menu_Right */
+header .header_Menu .Menu_Right{
+    width: fit-content;
+    height: inherit;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+header .header_Menu .Menu_Right .MR_Category{
+    width: 142px;
+    height: inherit;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: right;
+    align-items: center;
+    column-gap: 4px;
+    font-size: 14px;
+    color: #3f4064;
+    cursor: pointer;
+    position: relative;
+}
+header .header_Menu .Menu_Right .MR_Category:hover .MR_Category_Navbar {
+    display: flex;
+}
+header .header_Menu .Menu_Right .MR_Category .MR_Category_Navbar {
+    width: 65vw;
+    height: 70vh;
+    overflow: hidden;
+    position: absolute;
+    top: 40px;
+    right: 0px;
+    z-index: 50;
+    background-color: #FFF;
+    box-shadow: 1px 1px 2px #000;
+    border-bottom-left-radius: 8px;
+    display: none;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+header .header_Menu .Menu_Right .MR_Category .MR_Category_Navbar .CN_Subnav {
+    float: left;
+  	overflow: hidden;
+}
+header .header_Menu .Menu_Right .MR_Category .MR_Category_Navbar .CN_Subnav:not(:first-child) .Sub_Content{
+    display: none;
+}
+header .header_Menu .Menu_Right .MR_Category .MR_Category_Navbar .CN_Subnav:hover .Sub_Button span {
+    color: #ef394e;
+}
+header .header_Menu .Menu_Right .MR_Category .MR_Category_Navbar .CN_Subnav .Sub_Content .SubC_Title:hover {
+    color: #ef394e;
+}
+header .header_Menu .Menu_Right .MR_Category .MR_Category_Navbar .CN_Subnav .Sub_Content .SubC_Box .CBox_Row .Row_Link:hover {
+    color: #ef394e;
+}
+header .header_Menu .Menu_Right .MR_Category .MR_Category_Navbar .CN_Subnav:hover .Sub_Content {
+    display: flex;
+}
+header .header_Menu .Menu_Right .MR_Category .MR_Category_Navbar .CN_Subnav .Sub_Button  {
+    width: 160px;
+    height: 50px;
+    display: inline-block;
+    text-decoration: none;
+    background-color: #F5F5F5;
+    pointer-events: none;
+    padding: 12px 8px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 8px;
+}
+header .header_Menu .Menu_Right .MR_Category .MR_Category_Navbar .CN_Subnav .Sub_Button :nth-child(2) {
+    font-size: 12px;
+    color: #3f4064;
+}
+header .header_Menu .Menu_Right .MR_Category .MR_Category_Navbar .CN_Subnav .Sub_Content {
+    width: calc(65vw - 160px);
+    height: 70vh;
+    padding: 20px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #fff;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    row-gap: 20px;
+}
+header .header_Menu .Menu_Right .MR_Category .MR_Category_Navbar .CN_Subnav .Sub_Content .SubC_Title {
+    color: #008eb2;
+    font-size: 12px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    column-gap: 4px;
+}
+header .header_Menu .Menu_Right .MR_Category .MR_Category_Navbar .CN_Subnav .Sub_Content .SubC_Box {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: #fff;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+header .header_Menu .Menu_Right .MR_Category .MR_Category_Navbar .CN_Subnav .Sub_Content .SubC_Box .CBox_Row {
+    width: 25%;
+    height: inherit;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    row-gap: 8px;
+}
+header .header_Menu .Menu_Right .MR_Category .MR_Category_Navbar .CN_Subnav .Sub_Content .SubC_Box .CBox_Row .Head_Link {
+    font-size: 14px;
+    color: #0c0c0c;
+    text-decoration: none;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 8px 0;
+}
+header .header_Menu .Menu_Right .MR_Category .MR_Category_Navbar .CN_Subnav .Sub_Content .SubC_Box .CBox_Row .Sub_Link {
+    font-size: 12px;
+    color: #81858b;
+    text-decoration: none;
+    padding: 4px 0;
+}
+
+
+header .header_Menu .Menu_Right .section2{
+    width: 1px;
+    height: 16px;
+    background-color: #e0e0e2;
+}
+header .header_Menu .Menu_Right .MR_Other {
+    height: inherit;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+header .header_Menu .Menu_Right .MR_Other a {
+    height: inherit;
+    padding: 0 12px;
+    font-size: 12px;
+    color: #3f4064;
+    text-decoration: none;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    column-gap: 4px;
+}
+header .header_Menu .Menu_Right .MR_Category:hover{
+    border-bottom: 2px solid #ef394e;
+}
+header .header_Menu .Menu_Right .MR_Other a:hover{
+    border-bottom: 2px solid #ef394e;
+}
+/* /Menu_Right */
+/* Menu_Left */
+header .header_Menu .Menu_Left{
+    width: fit-content;
+    height: inherit;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    color: #3f4064;
+    text-decoration: none;
+    column-gap: 8px;
+    position: relative;
+    cursor: pointer;
+}
+header .header_Menu .Menu_Left .Tooltip_Text{
+    width: max-content;
+    height: inherit;
+    padding: 0 15px;
+    display: none;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    color: #FFF;
+    background-color: #3F4064;
+    text-align: center;
+    border-radius: 6px;
+    position: absolute;
+    top: 40px;
+    left: -9px;
+    border-radius: 8px;
+}
+header .header_Menu .Menu_Left:hover .Tooltip_Text{
+    display: flex;
+}
+header .header_Menu input[type="radio"]{
+    display: none;
+}
+header .header_Menu .Location_Event_Window {
+    width: 460px;
+    height: 540px;
+    background-color: white;
+    display: none;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: fixed;
+    top: 128px;
+    left: 550px;
+    z-index: 5;
+    border: 2px solid #e0e0e2;
+    border-radius: 8px;
+    opacity: 1;
+    transition: all ease 500ms;
+}
+header .header_Menu .Location_Event_Window .LE_Title {
+    width: inherit;
+    height: 60px;
+    padding: 12px 20px 12px 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    color: #0c0c0c;
+}
+header .header_Menu .Location_Event_Window .LE_City_List {
+    width: inherit;
+    height: 100%;
+    padding: 16px 20px;
+    overflow:auto;
+}
+header .header_Menu .Location_Event_Window .LE_City_List .LE_CL_item {
+    width: 100%;
+    height: 60px;
+    padding: 12px 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+    color: #3f4064;
+    text-decoration: none;
+    border-bottom: 1px solid #e0e0e2;
+}
+header .header_Menu .Location_Event_Window .LE_City_List a:first-child {
+    justify-content: flex-start;
+    color: #19bfd3;
+    column-gap: 16px;
+}
+header .header_Menu .Location_Event_Window .LE_City_List a:last-child {
+    border: unset;
+}
+header .header_Menu .Location_Event_Window [for="Open_Location"] {
+    display: flex;
+    position: relative;
+}
+header .header_Menu .Location_Event_Window [for="Close_Location"] {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 2;
+    border-radius: 8px;
+}
+#Open_Location:checked ~ .Location_Event_Window {
+    display: flex;
+    opacity: 1;
+    box-shadow: 0 0 0 max(100vh, 100vw) rgba(0, 0, 0, .3);
+}
+#Open_Location:checked .Tooltip_Text {
+    visibility: hidden;
+    cursor: none;
+    pointer-events: none;
+}
+#Close_Location:checked ~ .Location_Event_Window {
+    display: none;
+}
+/* /Menu_Left */
+/* /header_Menu */
